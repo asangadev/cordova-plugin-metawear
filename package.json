@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cande1gut/cordova-plugin-metawear.git"
+    "url": "git+https://github.com/asangadev/cordova-plugin-metawear.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cande1gut/cordova-plugin-metawear/issues"
+    "url": "https://github.com/asangadev/cordova-plugin-metawear/issues"
   },
-  "homepage": "https://github.com/cande1gut/cordova-plugin-metawear#readme"
+  "homepage": "https://github.com/asangadev/cordova-plugin-metawear#readme"
 }
