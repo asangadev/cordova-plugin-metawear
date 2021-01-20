@@ -23,6 +23,14 @@
   MWSupportedModules *supportedModules;
 }
 
+- (void)initialize:(CDVInvokedUrlCommand*)command
+{
+  CDVPluginResult* pluginResult = nil;
+  NSMutableDictionary *boards = [NSMutableDictionary dictionaryWithDictionary:@{}];
+  pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:boards];
+  [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 - (void)scanForDevices:(CDVInvokedUrlCommand*)command
 {
   CDVPluginResult* pluginResult = nil;
