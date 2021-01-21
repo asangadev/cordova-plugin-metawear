@@ -18,7 +18,7 @@
 {
   NSLog(@"startAccelerometer called");
   MBLAccelerometerBMI160 *bmi160Accelerometer = mwDevice.connectedDevice.accelerometer;
-  [bmi160Accelerometer.stepEvent startNotificationsWithHandlerAsync:^(MBLAccelerometerData *accelerometerData, NSError *error){
+  [bmi160Accelerometer.stepEvent startNotificationsWithHandlerAsync:^(MBLNumericData *accelerometerData, NSError *error){
       CDVPluginResult* pluginResult = nil;
       NSLog(@"Accelerometer callback %@", accelerometerData);
       pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"TOOK_A_STEP"];
