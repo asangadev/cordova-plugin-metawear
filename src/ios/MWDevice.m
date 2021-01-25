@@ -44,6 +44,7 @@
       [[MBLMetaWearManager sharedManager] stopScanForMetaWears];
       for (MBLMetaWear *device in array) {
         NSMutableDictionary *entry = [NSMutableDictionary dictionaryWithDictionary:@{}];
+        entry[@"name"] = device.name;
         entry[@"address"] = device.identifier.UUIDString;
         entry[@"rssi"] = [device.discoveryTimeRSSI stringValue];
         boards[device.identifier.UUIDString] = entry;
