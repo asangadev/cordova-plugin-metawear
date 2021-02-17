@@ -26,7 +26,7 @@ cordova platform add ios
 ```
 Load Device.js in your javascript.
 
-Head over to https://github.com/mbientlab-projects/metawear_cordova_example for a simple example project.
+Head over to https://github.com/polyglotprogramminginc/metawear_cordova_example for a simple example project.
 
 ##Using The Plugin
 
