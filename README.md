@@ -17,7 +17,7 @@ cordova create <your project>
 ```
 Add in the plugin
 ```
-cordova plugin add http://www.github.com/mbientlab-projects/cordova-plugin-metawear.html
+cordova plugin add https://github.com/asangadev/cordova-plugin-metawear.git
 ```
 Add in your platform
 ```
