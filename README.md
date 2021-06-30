@@ -53,7 +53,7 @@ var mycallback = function(result){
 Connects to the specified board.  The success callback is also used for disconnect.
 
 ```Javacript
-mbientlab.mwdevice.connect(macAddressOfBoard, succesCallback, failureCallback);
+metawear.mwdevice.connect(macAddressOfBoard, succesCallback, failureCallback);
 ```
 
 ###Disconnect
@@ -61,7 +61,7 @@ mbientlab.mwdevice.connect(macAddressOfBoard, succesCallback, failureCallback);
 Disconnects from the board.  Sends a disconnect message to the success callback of connect.
 
 ```Javascript
-mbientlab.mwdevice.disconnect();
+metawear.mwdevice.disconnect();
 ```
 
 ###supportedModules
@@ -69,7 +69,7 @@ mbientlab.mwdevice.disconnect();
 Returns a object with the various modules with a true or false value indicating if they are supported on the board you are connected to in the success callback.
 
 ```Javascript
-mbientlab.mwdevice.supportedModules(successCallback, failureCallback);
+metawear.mwdevice.supportedModules(successCallback, failureCallback);
 
 successCallback.gpio //value will be true if supported,  false if not.
 successCallback.accelerometer
@@ -82,7 +82,7 @@ successCallback.stepCounter
 Reads the RSSI value you are currently getting from the board.  The RSSI is returned as a string in the success callback.
 
 ```Javascript
-mbientlab.mwdevice.readRssi(successCallback, failureCallback);
+metawear.mwdevice.readRssi(successCallback, failureCallback);
 ```
 
 ###readBatteryLevel
@@ -159,7 +159,7 @@ var success = function(result){
    console.log("x: " + result.x + " y: " + result.y + " z: " + result.z);
 }
 
-mbientlab.mwdevice.startAccelerometer(success, failure);
+metawear.mwdevice.startAccelerometer(success, failure);
 ```
 
 ###stopAccelerometer
@@ -167,7 +167,7 @@ mbientlab.mwdevice.startAccelerometer(success, failure);
 Stops the accelerometer and stops streaming data.
 
 ```Javascript
-mbientlab.mwdevice.stopAccelerometer();
+metawear.mwdevice.stopAccelerometer();
 ```
 
 ###startStepCounter
@@ -195,7 +195,7 @@ mbientlab.mwdevice.startStepCounter(success, failure);
 Stops the step counter and stops streaming data.
 
 ```Javascript
-mbientlab.mwdevice.stopStepCounter();
+metawear.mwdevice.stopStepCounter();
 ```
 
 ###startGyroscope
@@ -212,7 +212,7 @@ var success = function(result){
    console.log("x: " + result.x + " y: " + result.y + " z: " + result.z);
 }
 
-mbientlab.mwdevice.startGyroscope(success, failure);
+metawear.mwdevice.startGyroscope(success, failure);
 ```
 
 Note:  The failure callback will come back with a result.status of "MODULE_NOT_SUPPORTED" if the board you are connected to does not support this module.
@@ -222,7 +222,7 @@ Note:  The failure callback will come back with a result.status of "MODULE_NOT_S
 Stops the gyroscope and stops streaming data.
 
 ```Javascript
-mbientlab.mwdevice.stopGyroscope();
+metawear.mwdevice.stopGyroscope();
 ```
 
 
